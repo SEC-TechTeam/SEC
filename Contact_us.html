@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--========== BOX ICONS ==========-->
+            <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+            <!--========== CSS ==========-->
+            <link rel="stylesheet" href="assets/css/styles.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Cnotact Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="icon" href="assets/img/Home.jpeg" type="image/png">
+</head>
+
+<style>
+/*====================================================== LAYOUT ==================================================*/
+.bd-container {max-width: 90%;width: calc(100% - 0.2rem);margin-left: var(--mb-2);margin-right: var(--mb-2);}
+.bd-grid {display: grid;gap: 1.5rem;}
+.l-header {  width: 100%;  position: fixed;  top: 0;  left: 0;  z-index: var(--z-fixed);  background-color: var(--body-color);}
+.form-control{border-radius: 2rem;}
+.btnSubmit{border-radius: 2rem; background-color: var(--first-color);color: white;}
+.section{background-color: var(--body-color);}
+.footer{width:100%;margin-right:0%;}
+.home__container{background-color: rgba(255, 255, 255 , 0.7); border-radius: 2rem; padding:3rem;margin-left:auto;margin-right: auto;}
+</style>
+
+<body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container" style="max-width:96%;align-content:space-around;">
+                <img src="assets/img/home.jpg" class="nav_logo" style="margin-left:5vw; margin-top:5vh; clip-path:circle(2.5rem);">
+                <div class="nav__Events" id="nav-Events" style="margin-top:5vh;">
+                    <ul class="nav__list">
+                        <a href="index.html#home"><li class="button">Home</li></a>&nbsp;&nbsp;
+                        <a href="index.html#about"><li class="button">About</li></a>&nbsp;&nbsp;
+                        <a href="Events.html"><li class="button">Events</li></a>&nbsp;&nbsp;
+                        <a href="forms.html"><li class="button">Registration</li></a>&nbsp;&nbsp;
+                        <a href="team.html"><li class="button">Team</li></a>&nbsp;&nbsp;
+                        <a href="Contact_us.html"><li class="button">Contact us</li></a>&nbsp;&nbsp;
+                        <li class="button"><i class='bx bx-moon change-theme' id="theme-button"></i></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </ul>
+                </div>
+  
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-Events'></i>
+                </div>
+            </nav>
+        </header>
+        <header class="l-header mobile-menu" id="header">
+            <img src="assets/img/home.jpg" class="nav_logo_mobile" style="clip-path:circle(1.5rem);">
+            <input type="checkbox" id="active">
+                <label for="active" class="menu-btn"><span></span></label>
+                <label for="active" class="close"></label>
+                <div class="wrapper">
+                <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="forms.html">Registration</a></li>
+                <li><a href="Contact_us.html">Contact</a></li>
+                </ul>
+                </div>
+        </header>
+        <!--========== Contact Us Page ==========-->
+        <section class="Registration section" style="background-image:url('assets/img/backgrounds/bacground_3_2.png');background-size:contain;">    
+            <div class="home__container bd-container bd-grid" id="Home">
+                <div class="home__data">
+                    <h1 class="home__title"style="font-size:9vh;font-weight:800">Contact Us</h1>
+                    <span class="mobile__title">Contact Us</span>
+                    <form method="post" autocomplete="off" name="google-sheet">
+                        <div class="form-group">
+                            <input type="text" name="Name" class="form-control" placeholder="Name *" value="" required=""/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Email" class="form-control" placeholder="Email *" value="" required=""/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Question" class="form-control" placeholder="Question *" value="" required=""/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.531718876913!2d73.8854285!3d18.4595591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaf47d15ce33%3A0x8098faf1b47cc4ba!2sVishwakarma%20Institute%20of%20Information%20Technology%2C%20Survey%20No.%202%2F3%2F4%2C%20VIM%20Private%20Rd%2C%20Kapil%20Nagar%2C%20Kondhwa%2C%20Pune%2C%20Maharashtra%20411048!5e0!3m2!1sen!2sin!4v1665726031453!5m2!1sen!2sin" 
+                    width="400" height="400" style="border-radius: 2rem;border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="fit-content" justify-self=" center;"></iframe>
+                    
+                    <!-- <img src="assets/img/Illustration_1.png" class="home__img"> -->
+                  </div>
+                <div class="map_mobile">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.531718876913!2d73.8854285!3d18.4595591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaf47d15ce33%3A0x8098faf1b47cc4ba!2sVishwakarma%20Institute%20of%20Information%20Technology%2C%20Survey%20No.%202%2F3%2F4%2C%20VIM%20Private%20Rd%2C%20Kapil%20Nagar%2C%20Kondhwa%2C%20Pune%2C%20Maharashtra%20411048!5e0!3m2!1sen!2sin!4v1665726031453!5m2!1sen!2sin" 
+                    width="250" height="250" style="border-radius: 2rem;border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="fit-content" justify-self=" center;"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby4pNxjRVcSkeJA2W-Tw4LZh0e9wana9mHnic3_cX0MJDjH-pDT3-ACU3TEawtMsBU7/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
+</html>
