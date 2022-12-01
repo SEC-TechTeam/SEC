@@ -21,7 +21,6 @@ Please adhere to this project's `code of conduct`.
 
 
 
-## Inital Commit
-- [Akash Tandale](https://github.com/Akash-Tandale001)
+## Contributors
 - [Shreyas Dixit](https://github.com/SRDdev)
 
