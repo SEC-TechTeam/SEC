@@ -51,7 +51,7 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-function register() {
+function Feedback() {
     parent.location = "https://forms.gle/mp8rS8h217wmxd8o7"
     console.log("location")
 }

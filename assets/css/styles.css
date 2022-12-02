@@ -379,8 +379,8 @@ img{
 .Team__initial{
   text-align: initial;
 }
-/* ========== Registration Page =========== */
-.registration__container{
+/* ========== Feedback Page =========== */
+.Feedback__container{
   height: calc(80vh);
   align-content: center;
   margin-bottom: 0rem;
@@ -388,20 +388,20 @@ img{
   grid-template-columns: repeat(2,1fr);
   align-items: center;
 }
-.registration__title{
+.Feedback__title{
   font-size:9vh;
   font-weight:800;
   color:var(--title-color);
   margin-bottom: var(--mb-1);
 }
 
-.registration__subtitle{
+.Feedback__subtitle{
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-4);
 }
 
-.registration__img{
+.Feedback__img{
   width: fit-content;
   justify-self: center;
 }
@@ -422,11 +422,28 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 2rem;
   margin: 4rem 5vw;
   padding: 0;
   list-style-type: none;
+}
+.cards_upcomming {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto-fit, auto-fit));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card_upcomming {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border: none;
+  border-radius: calc(var(--curve) * 1rem);
+  overflow: hidden;
 }
 
 .card {
@@ -440,7 +457,7 @@ body {
 }
 
 .card__image { 
-  width: 24em;
+  width: 36em;
   height: 26em;     
   
 }
@@ -457,7 +474,7 @@ body {
   transition: .2s ease-in-out;
 }
 
-.card:hover .card__overlay {
+.card_upcomming:hover .card__overlay {
   transform: translateY(0);
 }
 
@@ -486,7 +503,9 @@ body {
   fill: var(--surface-color);
   d:path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }       
-
+.card_upcomming:hover .card__header {
+  transform: translateY(0);
+}
 .card:hover .card__header {
   transform: translateY(0);
 }
@@ -598,6 +617,8 @@ body {
 /*========== MEDIA QUERIES ==========*/
 @media screen and (max-width: 576px){
   /* Home Mobile View */
+  .l-header{width:80%;}
+  .body{width:80%;}
   .nav_logo{display:none;}
   .nav_logo_mobile{
     height:3rem;
@@ -653,9 +674,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     color: #000;
-    /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+   background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);
     transition: all 0.3s ease-in-out;
   }
   .menu-btn span,
@@ -791,30 +810,47 @@ body {
   /* Events */
   .card{
     width: 80%;
+    height:80%;
+    margin-left:0rem;
+    margin-right:0rem;
+    }
+  .card_upcomming {
+    width:90%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    margin: 2rem 2vw;
+    margin-left:2rem;
+    padding: 0;
+    list-style-type: none;
   }
   .Events__container{
     /* grid-template-columns: repeat(2, auto); */
     background-color:rgba(255, 255, 255 , 0.9);
+    margin-top:1.5rem;
     padding:0.5rem;
     border-radius:2rem;
-    width:90%;
+    width:95%;
     height:fit-content;
     column-gap: 4rem;
   }
-  /* Registration Page */
-  .registration__container{
+  /* Feedback Page */
+  .Feedback__container{
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255,0.9);
     border-radius: 2rem;
     padding: 1rem;
   }
-  .registration__data{
+  .Feedback__data{
     width:fit-content;
   }
   .map{display: none;}
   .mobile__title{font-size: 5vh;}
   .video_normal{display: none;}
+
 }
 @media screen and (min-width: 576px){
   .mobile-menu{display: none;}

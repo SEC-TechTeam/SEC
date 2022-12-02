@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrations</title>
+    <title>Feedbacks</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="assets\css\styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -32,7 +32,7 @@
                         <a href="index.html#home"><li class="button">Home</li></a>&nbsp;&nbsp;
                         <a href="index.html#about"><li class="button">About</li></a>&nbsp;&nbsp;
                         <a href="Events.html"><li class="button">Events</li></a>&nbsp;&nbsp;
-                        <a href="forms.html"><li class="button">Registration</li></a>&nbsp;&nbsp;
+                        <a href="forms.html"><li class="button">Feedback</li></a>&nbsp;&nbsp;
                         <a href="team.html"><li class="button">Team</li></a>&nbsp;&nbsp;
                         <a href="Contact_us.html"><li class="button">Contact us</li></a>&nbsp;&nbsp;
                         <li class="button"><i class='bx bx-moon change-theme' id="theme-button"></i></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -55,19 +55,19 @@
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="Events.html">Events</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="forms.html">Registration</a></li>
+                <li><a href="forms.html">Feedback</a></li>
                 <li><a href="Contact_us.html">Contact</a></li>
                 </ul>
                 </div>
         </header>
           <main class="l-main">
         <!--========== Form Page ==========-->
-        <section class="Registration section" style="background-image:url('assets/img/backgrounds/bacground_3_2.png');background-size:contain;">    
+        <section class="Feedback section" style="background-image:url('assets/img/backgrounds/bacground_3_2.png');background-size:contain;">    
             
             <div class="home__container bd-container bd-grid" id="Home">
                 <div class="home__data">
-                    <h1 class="home__title"style="font-size:9vh;font-weight:800">Registrations</h1>
-                    <span class="mobile__title">Registrations</span>
+                    <h1 class="home__title"style="font-size:9vh;font-weight:800">Feedbacks</h1>
+                    <!-- <span class="mobile__title">Feedbacks</span> -->
                     <form method="post" autocomplete="off" name="google-sheet">
                         <div class="form-group">
                             <input type="text" name="Name" class="form-control" placeholder="Name *" value="" required=""/>
@@ -82,10 +82,13 @@
                             <input type="text" name="Branch" class="form-control" placeholder="Branch *" value="" required=""/>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="Year" class="form-control" placeholder="Current Year (SY/TY/Btech)*" value="" required=""/>
+                            <input type="text" name="Year" class="form-control" placeholder="Current Year (FY/SY/TY/Btech)*" value="" required=""/>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Register" id="sumbit_form"/>
+                            <input type="text" name="Feedback" class="form-control" placeholder="Was the event good ?" value="" required=""/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Feedback" id="sumbit_form"/>
                         </div>
                     </form>
                 </div>
@@ -117,7 +120,7 @@
               e.target.classList.add('submitting');
             //   btn.setAttribute('disabled','');
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thank you for your Feedback ! "))
                 .catch(error => console.error('Error!', error.message))
                 e.target.classList.remove('submitting');
                 // btn.removeAttribute('disable');
