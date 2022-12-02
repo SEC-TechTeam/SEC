@@ -617,8 +617,8 @@ body {
 /*========== MEDIA QUERIES ==========*/
 @media screen and (max-width: 576px){
   /* Home Mobile View */
-  .l-header{width:80%;}
-  .body{width:80%;}
+  .l-header{width:100%;}
+  .body{width:90%;}
   .nav_logo{display:none;}
   .nav_logo_mobile{
     height:3rem;
